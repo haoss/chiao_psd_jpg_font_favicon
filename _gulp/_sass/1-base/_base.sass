@@ -29,8 +29,8 @@ body
 
 body
   background: $color-white
-  font-size: 16px
-  font-family: $primary-font
+  font-size: 14px
+  font-family: $font-roboto-r
   color: $primary-color
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
@@ -38,15 +38,16 @@ body
 //  Typography
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
   color: $primary-color
-  font-weight: bold
+  font-weight: 400
   text-decoration: none
   margin: 0 0 15px 0
 
 .h1, h1
-  font-size: 21px
+  font-size: 28px
   line-height: 1.05
   letter-spacing: -1px
   margin-bottom: 25px
+  font-family: $font-sansation-b
 
 .h2, h2
   font-size: 18px
@@ -79,7 +80,8 @@ em, i, .em, .i
   font-style: italic
 
 strong, b, .strong, .b
-  font-weight: bold
+  font-weight: 400
+  font-family: $font-roboto-b
 
 hr
   border: solid #ddd
@@ -110,6 +112,8 @@ a.link
   width: 100%
   min-width: 320px
   padding: 0 15px
+  .section
+    min-width: auto
 
 /* text align */
 .text
@@ -130,20 +134,20 @@ a.link
   z-index: 10000
   background-color: $color-white
   &__block
-    background: $color-black
+    background: $color-blue
     animation: load1 1s infinite ease-in-out
     width: 1em
     height: 4em
     position: absolute
     top: 50%
     left: 50%
-    color: $color-black
+    color: $color-blue
     text-indent: -9999em
     font-size: 11px
     animation-delay: -0.16s
     transform: translate(-50%,-50%)
     &:before, &:after
-      background: $color-black
+      background: $color-blue
       animation: load1 1s infinite ease-in-out
       width: 1em
       height: 4em
@@ -189,10 +193,6 @@ a.link
 .section
   padding: 50px 0
   min-width: 320px
-
-.container
-  .section
-    min-width: inherit
 
 ul li
   list-style-type: disc

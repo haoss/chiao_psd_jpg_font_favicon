@@ -1,8 +1,44 @@
 /* modules */
 
-/* gallery */
-.gallery
-  &__item
-    padding: 5px
-    background: $color-white
-    box-shadow: 0 0 5px rgba($color-black,0.5)
+.form-free
+  padding-top: 43px
+  padding-bottom: 13px
+  background:
+    position: top center
+    repeat: no-repeat
+    size: cover
+    image: url('../img/bg-section1.png')
+  min-height: 180px
+  max-width: 1840px
+  position: relative
+  overflow: hidden
+  border-radius: 5px
+  margin: 0 auto
+  p
+    font-family: $font-sansation-r
+    line-height: 28px
+    font-size: 18px
+    &:last-child
+      margin: 0
+    strong
+      font-family: $font-sansation-b
+  &__title
+    font-size: 30px
+    font-family: $font-sansation-b
+    text-transform: uppercase
+    line-height: 1
+    margin-bottom: 20px
+    white-space: nowrap
+  &__wrapper
+    display: flex
+    padding: 0 40px
+    justify-content: space-between
+    &>div
+      &+div
+        margin-left: 40px
+  &__form
+    display: flex
+    &>div
+      width: 257px
+      &+div
+        margin-left: 40px

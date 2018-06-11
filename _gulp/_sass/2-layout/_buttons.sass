@@ -4,7 +4,7 @@
   display: inline-block
   padding: 0 15px
   margin-bottom: 0
-  font-size: 14px
+  font-size: 12px
   font-weight: 400
   text-align: center
   white-space: nowrap
@@ -12,20 +12,22 @@
   touch-action: manipulation
   cursor: pointer
   user-select: none
-  background:
-    image: none
-    color: $color-gray
-  border: 1px solid $color-white
-  border-radius: 3px
+  background: $color-darkblue linear-gradient(to right, $color-lightblue, $color-darkblue)
+  border: 0
+  border-radius: 25px
   height: 40px
   line-height: 40px
   text-decoration: none
+  font-family: $font-roboto-b
   transition: all 0.35s
-
+  text-transform: uppercase
+  box-shadow: 0 6px 20px #4fb1f6
+  color: $color-white
   &:hover, &:focus, &:active
     outline: none
-
-  &--default
-    color: #333
-    background-color: $color-white
-    border-color: $color-gray
+    background: $color-darkblue
+    color: $color-white
+    box-shadow: 0 0 0 #4fb1f6
+  &--block
+    display: block
+    width: 100%

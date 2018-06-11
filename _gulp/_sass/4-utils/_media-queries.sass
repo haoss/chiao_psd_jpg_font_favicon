@@ -13,11 +13,39 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
-  /**/
+  .form-free
+    &__wrapper
+      padding: 0
+    &__form
+      &>div
+        width: 213px
+        &+div
+          margin-left: 30px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
-  /**/
+  .form-free
+    padding-top: 45px
+    padding-bottom: 28px
+    &__wrapper
+      flex-direction: column
+      &>div
+        &+div
+          margin-top: 30px
+          margin-left: 0
+      p
+        text-align: center
+    &__title
+      white-space: normal
+      text-align: center
+    &__form
+      padding-left: 47px
+      padding-right: 47px
+      &>div
+        padding: 0 15px
+        width: 50%
+        &+div
+          margin-left: 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -27,9 +55,34 @@
     transform: none !important
     animation: none !important
 
+  .form__group
+    margin-bottom: 20px
+  .form-free
+    padding-bottom: 35px
+    &__wrapper
+      &>div
+        &+div
+          margin-top: 24px
+      p
+        font-size: 16px
+    &__title
+      line-height: 1.2
+    &__form
+      padding-left: 50px
+      padding-right: 50px
+      flex-direction: column
+      &>div
+        padding: 0
+        width: 100%
+        &+div
+          margin-left: 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
-  /**/
+  .form-free
+    &__form
+      padding-left: 23px
+      padding-right: 23px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
