@@ -3,24 +3,6 @@
 // Document ready
 $(document).on('ready', function(){
 
-  // E-mail Ajax Send
-  // Documentation & Example: https://github.com/agragregra/uniMail
-  $("form").submit(function() { //Change
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you!");
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
-
   // Magnific popup gallery
   $('.gallery').each(function() {
     $(this).magnificPopup({
@@ -72,6 +54,9 @@ $(document).on('ready', function(){
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   });
 
+  welcomeCarousel();
+  stonesCarousel();
+
   // Chrome Smooth Scroll
   try {
     $.browserSelector();
@@ -87,12 +72,11 @@ $(document).on('ready', function(){
 });
 
 $(window).on('load', function() {
-  // $(".loader_inner").fadeOut();
   $(".loader").delay(400).fadeOut("slow");
 });
 
-$(window).on('scroll', function() { console.log('scroll'); });
-$(window).on('resize', function() { console.log('resize'); });
+$(window).on('scroll', function() { });
+$(window).on('resize', function() { });
 
 /*
 version 2015-09-23 14:30 GMT +2
@@ -154,4 +138,44 @@ function simpleForm(form, callback) {
 
     return false;
   });
+}
+
+function welcomeCarousel(){
+  $('.welcome__carousel-top').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    asNavFor: '.welcome__carousel-bottom',
+    autoplay: true
+  })
+  $('.welcome__carousel-bottom').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    asNavFor: '.welcome__carousel-top'
+  })
+}
+
+function stonesCarousel(){
+  $('.stones__carousel-top').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true
+  })
 }

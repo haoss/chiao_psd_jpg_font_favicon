@@ -2,11 +2,13 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Главная - siteName</title>
+        <title>Главная - медицинский центр Chiao</title>
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick-theme.css">
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
@@ -32,15 +34,33 @@
         <div class="content">
             <div class="section welcome">
                 <div class="container">
-                    <div class="welcome__wrapper"><img src="" alt="" class="welcome__img">
-                        <div class="welcome__carousel"></div>
+                    <div class="welcome__wrapper"><img src="./img/welcome-man.png" alt="" class="welcome__img">
+                        <div class="welcome__carousel">
+                            <ul class="welcome__carousel-top">
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                            </ul>
+                            <ul class="welcome__carousel-bottom">
+                                <li>С входа в клинику, Вас встретит большой стенд с названием клиники и ее слоганом.</li>
+                                <li>С входа в клинику, Вас встретит большой стенд с названием клиники и ее слоганом.</li>
+                                <li>С входа в клинику, Вас встретит большой стенд с названием клиники и ее слоганом.</li>
+                                <li>С входа в клинику, Вас встретит большой стенд с названием клиники и ее слоганом.</li>
+                                <li>С входа в клинику, Вас встретит большой стенд с названием клиники и ее слоганом.</li>
+                            </ul>
+                        </div>
                         <div class="welcome__content">
                             <h1>ДОбро пожаловать</h1>
-                            <p>Институт заболеваний желчного пузыря Научно-исследовательского центра гепатобилиарной и кишечной хирургии Министерства здравоохранения КНР. </p>
+                            <p class="welcome__introtext">Институт заболеваний желчного пузыря Научно-исследовательского центра гепатобилиарной и кишечной хирургии Министерства здравоохранения КНР. </p>
                             <p>Глава Института заболеваний желчного пузыря Научно-исследовательского центра гепатобилиарной и кишечной хирургии Министерства здравоохранения КНР. Член общества эндоскопии при китайской медицинской ассоциации. Экспертный член технологий эндоскопии отделения общей хирургии общества эндоскопии при китайской медицинской ассоциации. Изобретатель эндоскопов.</p>
                             <p>Заведующий образовательной базой эндоскопических технологий диагностики и лечения отделения общей хирургии Министерства здравоохранения КНР. </p>
                             <p>Глава Научно-исследовательского института болезней желчного пузыря. Член группы лапароскопических исследований отделения минимально-инвазивной хирургии медицинской ассоциации.</p>
                             <p>Редактор журналов «Эндоскопия Китая», «Современная медицина Китая», «Биомедицинская инженерия Китая».</p>
+                        </div>
+                        <div class="welcome__more">
+                            <p><strong>Лечение ведет профессор с мировым именем<br><span>Доктор Чао Те</span></strong></p><img src="./img/welcome-signature.png" alt=""><a href="#!" class="btn btn--small">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +97,26 @@
                     </div>
                 </div>
             </div>
-            <div class="section"></div>
+            <div class="section stones">
+                <div class="container">
+                    <div class="stones__wrapper">
+                        <div class="stones__carousel">
+                            <ul class="stones__carousel-top">
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                                <li><img src="./img/welcome-carousel.png" alt="" class="img-responsive"></li>
+                            </ul>
+                        </div>
+                        <div class="stones__content">
+                            <div class="stones__content-title">Удаление камней и полипов из желчного пузыря <strong>без удаления желчного пузыря</strong></div>
+                            <p>Наш Институт изучения заболеваний желчного пузыря Научно-исследовательского центра гепатобилиарной и кишечной хирургии Министерства здравоохранения КНР является единственным в мире разработчиком оборудования для проведения минимально- инвазивных операций нового типа по удалению камней из желчного пузыря и по удалению полипов из желчного пузыря и его протоков без удаления желчного пузыря.</p>
+                            <p>Уникальное оборудование для проведения минимально-инвазивных операций на желчном пузыре разработано и запатентовано в Китае, произведено в Германии.</p><a href="#!" class="btn btn--small">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Footer-->
         <footer class="footer">
@@ -96,6 +135,7 @@
         <!-- Load Scripts-->
         <script src="./js/libs.js"></script>
         <!-- Footer js-->
+        <script src="./js/libs/slick/slick.min.js"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

@@ -42,3 +42,170 @@
       width: 257px
       &+div
         margin-left: 40px
+
+.welcome
+  padding-top: 70px
+  padding-bottom: 0
+  &__wrapper
+    position: relative
+    padding-left: 292px
+    padding-right: 292px
+    min-height: 450px
+  &__img
+    position: absolute
+    left: -48px
+    bottom: 0
+  &__content
+    height: 305px
+    position: relative
+    overflow: hidden
+    font-size: 13px
+    margin-bottom: 20px
+    &::after
+      height: 50px
+      position: absolute
+      content: ''
+      left: 0
+      right: 0
+      bottom: 0
+      background: linear-gradient(to top, $color-white, rgba($color-white, 0))
+    p
+      line-height: 20px
+      &:last-child
+        margin-bottom: 0
+  &__introtext
+    font-size: 17px
+    line-height: 21px
+    font-family: $font-sansation-r
+  &__more
+    position: relative
+    font-size: 13px
+    padding-bottom: 30px
+    p
+      span
+        font-size: 15px
+        text-transform: uppercase
+    img
+      position: absolute
+      top: 0
+      left: 326px
+  &__carousel
+    position: absolute
+    right: 0
+    top: 0
+    border: 1px solid #e5e5e5
+    border-radius: 5px
+    background: $color-white
+    padding: 23px 11px 0 11px
+    width: 262px
+    .slick-slide
+      outline: none
+      &:focus
+        outline: none
+    &-top
+      margin: 0
+      padding: 0
+      overflow: hidden
+      border-radius: 5px
+      li
+        list-style: none
+        margin: 0
+    &-bottom
+      margin: 50px 0 30px 0
+      padding: 0 7px
+      font-size: 11px
+      font-style: italic
+      position: relative
+      color: #777777
+      li
+        list-style: none
+        margin: 0
+      .slick-dots
+        position: absolute
+        left: 0
+        right: 0
+        text-align: center
+        bottom: 50px
+        li
+          width: auto
+          padding: 0 3px
+          height: auto
+          vertical-align: middle
+          button
+            border: 1px solid #dbdbdb
+            width: 11px
+            height: 11px
+            padding: 0
+            border-radius: 50%
+            background: $color-white
+            &::before
+              display: none
+          &.slick-active
+            button
+              background: $color-blue
+              border-color: $color-blue
+
+.stones
+  padding-top: 52px
+  padding-bottom: 62px
+  &__wrapper
+    position: relative
+    padding-left: 292px
+    min-height: 292px
+  &__carousel
+    position: absolute
+    left: 0
+    top: 0
+    border: 1px solid #e5e5e5
+    border-radius: 5px
+    background: $color-white
+    padding: 9px
+    width: 262px
+    .slick-slide
+      outline: none
+      &:focus
+        outline: none
+    &-top
+      margin: 0
+      padding: 0
+      border-radius: 5px
+      li
+        list-style: none
+        margin: 0
+      .slick-dots
+        position: absolute
+        left: 0
+        right: 0
+        text-align: center
+        bottom: -26px
+        li
+          width: auto
+          padding: 0 3px
+          height: auto
+          vertical-align: middle
+          button
+            border: 1px solid #dbdbdb
+            width: 11px
+            height: 11px
+            padding: 0
+            border-radius: 50%
+            background: $color-white
+            &::before
+              display: none
+          &.slick-active
+            button
+              background: $color-blue
+              border-color: $color-blue
+  &__content
+    font-size: 13px
+    p
+      line-height: 20px
+    &-title
+      text-transform: uppercase
+      font-size: 20px
+      font-family: $font-sansation-r
+      line-height: 26px
+      margin-bottom: 20px
+      strong
+        font-size: 25px
+        display: block

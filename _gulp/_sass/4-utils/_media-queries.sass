@@ -21,6 +21,30 @@
         width: 213px
         &+div
           margin-left: 30px
+  .welcome
+    &__img
+      display: none
+    &__wrapper
+      padding-left: 0
+      padding-right: 243px
+      min-height: inherit
+    &__carousel
+      width: 213px
+      padding: 10px 10px 0 10px
+      &-bottom
+        padding-left: 0
+        padding-right: 0
+        .slick-dots
+          bottom: 70px
+    &__content
+      height: 270px
+  .stones
+    padding-bottom: 54px
+    &__wrapper
+      padding-left: 242px
+      min-height: 243px
+    &__carousel
+      width: 212px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -46,6 +70,22 @@
         width: 50%
         &+div
           margin-left: 0
+  .welcome
+    padding-top: 60px
+    &__carousel
+      display: none
+    &__wrapper
+      padding-right: 0
+      h1
+        text-align: center
+    &__introtext
+      text-align: center
+  .stones
+    &__wrapper
+      padding-left: 0
+      min-height: inherit
+    &__carousel
+      display: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -76,6 +116,9 @@
         width: 100%
         &+div
           margin-left: 0
+  .welcome
+    &__content
+      height: 480px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
@@ -83,6 +126,17 @@
     &__form
       padding-left: 23px
       padding-right: 23px
+  .welcome
+    &__more
+      p
+        max-width: 165px
+        line-height: 18px
+        span
+          display: block
+          margin-top: 3px
+      img
+        left: 170px
+        margin-top: 5px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
