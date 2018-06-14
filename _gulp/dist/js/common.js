@@ -56,6 +56,8 @@ $(document).on('ready', function(){
 
   welcomeCarousel();
   stonesCarousel();
+  sectionCarousel();
+  mainQuestion();
 
   // Chrome Smooth Scroll
   try {
@@ -151,7 +153,7 @@ function welcomeCarousel(){
     fade: true,
     cssEase: 'linear',
     asNavFor: '.welcome__carousel-bottom',
-    autoplay: true
+    // autoplay: true
   })
   $('.welcome__carousel-bottom').slick({
     infinite: true,
@@ -176,6 +178,80 @@ function stonesCarousel(){
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    autoplay: true
+    // autoplay: true
   })
+}
+
+function sectionCarousel(){
+  $('.section__carousel-body--1').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true
+  })
+  $('.section__carousel-body--2').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+        }
+      },
+      {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+      }
+    ]
+  })
+  $('.section__carousel-body--3').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+        }
+      },
+      {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+      }
+    ]
+  })
+}
+
+function mainQuestion(){
+  $('.section__carousel-question').each(function(){
+    var _this = $(this);
+    _this.find('p').on('click', function(){
+      $('.section__carousel-question').find('blockquote').hide();
+      $('.section__carousel-question .show').removeClass('show');
+      var _this = $(this);
+      if (_this.next().next().hide()) {
+        _this.next().next().show()
+      } else {
+        _this.next().next().hide()
+      }
+      $('.section__carousel-body--1').slick('refresh');
+    });
+  });
 }

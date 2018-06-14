@@ -1,3 +1,25 @@
 /* footer */
 .footer
-  background-color: $color-gray
+  padding-top: 45px
+  &__top
+    padding-bottom: 20px
+  &__bottom
+    border-top: 1px solid #f0f0f0
+    padding: 0 15px
+    margin: 0 -15px
+    font-size: 12px
+    color: #7c7c7c
+    +clearfix
+    &>div
+      height: 46px
+      line-height: 46px
+  &__copyright
+    float: left
+  &__development
+    float: right
+    a
+      display: inline-block
+      margin-left: 10px
+      img
+        position: relative
+        top: -2px

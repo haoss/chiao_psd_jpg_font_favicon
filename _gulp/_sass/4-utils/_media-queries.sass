@@ -45,6 +45,14 @@
       min-height: 243px
     &__carousel
       width: 212px
+  .video-responsive
+    padding-bottom: 175px
+  .form-email
+    &__wrapper
+      padding-left: 73px
+      padding-right: 62px
+    &__form
+      padding-top: 0
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -86,6 +94,27 @@
       min-height: inherit
     &__carousel
       display: none
+  .form-email
+    &__wrapper
+      padding-left: 0px
+      padding-right: 0px
+      &>div
+        &+div
+          margin-left: 30px
+    &__form
+      &>div
+        width: 220px
+
+@media (max-width : 991px) and (min-width : 767px)
+  .section
+    &__carousel
+      &-body
+        &--2
+          .slick-slide
+            width: 220px !important
+            margin-right: 30px !important
+            &:last-child
+              margin-right: 0 !important
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -117,8 +146,54 @@
         &+div
           margin-left: 0
   .welcome
+    padding-bottom: 40px
     &__content
-      height: 480px
+      height: auto
+    &__carousel
+      display: block
+      position: inherit
+      width: 262px
+      margin: 0 auto
+      padding: 9px 9px 0 9px
+      &-bottom
+        .slick-dots
+          bottom: 45px
+  .section
+    &__carousel
+      &-body
+        &--2
+          .popup-youtube
+            max-width: 450px
+            margin-left: auto
+            margin-right: auto
+            &+p
+              max-width: 450px
+              margin-left: auto
+              margin-right: auto
+        &--3
+          .section__carousel-comment
+            max-width: 450px
+            margin-left: auto
+            margin-right: auto
+  .form-email
+    padding-bottom: 45px
+    &__wrapper
+      flex-direction: column
+      &>div
+        &+div
+          margin-left: 0
+          margin-top: 20px
+    &__title
+      text-align: center
+      &+p
+        text-align: center
+        font-size: 15px
+    &__form
+      width: 100%
+      max-width: 350px
+      margin: 0 auto
+      &>div
+        width: 100%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
@@ -137,6 +212,17 @@
       img
         left: 170px
         margin-top: 5px
+  .section
+    &__carousel
+      &-body
+        &--3
+          padding-top: 10px
+          .slick-dots
+            margin-top: -20px
+  .form-email
+    &__form
+      padding-left: 23px
+      padding-right: 23px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
