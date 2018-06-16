@@ -14,7 +14,77 @@ html(lang="ru")
     
     include ./_include/_header
     
-    .content
+    .main-slider
+      .main-slider__wrapper
+        .main-slider__carousel
+          div
+            .main-slider__block
+              picture.main-slider__block-img
+                source(media='(max-width: 991px)', srcset='./img/main-slider/slide-1-970.png')
+                img(src='./img/main-slider/slide-1-1170.png', alt='')
+              .main-slider__block-info Удаление желчных камней и полипов
+              .main-slider__block-content
+                .div1 Предложение является единственным в мире!
+                .div2 Удаление желчных камней и полипов 
+                .div3 из желчного пузыря
+                .div4
+                  span без удаления 
+                .div5 желчного пузыря
+                .div6 // Сохраните желчный пузырь и живите полноценной жизнью
+                .div7-btn
+                  div
+                    a(href="#!").btn.btn--block Запись на консультацию
+                  div
+                    a(href="#!").btn.btn--block Запись на лечение
+                
+          div
+            .main-slider__block
+              picture.main-slider__block-img
+                source(media='(max-width: 991px)', srcset='./img/main-slider/slide-2-970.png')
+                img(src='./img/main-slider/slide-2-1170.png', alt='')
+              .main-slider__block-info.main-slider__block-info--2 Удаление желчных камней и полипов
+              .main-slider__block-content.main-slider__block-content--2
+                .div1.div1--2 Предложение является уникальным в мире!
+                .div2.div2--2 команда высококлассных специалистов 
+                .div3.div3--2 проводит в г.Гуанчжоу
+                .div4.div4--2
+                  span операцию без удаления
+                .div5.div5--2 камней с желчного пузыря
+                .div6.div6--2 // Сохраните желчный пузырь - не нарушайте целостность организма
+                .div7-btn.div7-btn--2
+                  div
+                    a(href="#!").btn.btn--block Запись на консультацию
+                  div
+                    a(href="#!").btn.btn--block Запись на лечение
+      .main-slider__date
+        i.ion-ios-calendar
+        | Ближайшие свободные даты приезда на операцию:
+        strong 8, 9, 14, 15  
+          small мая
+    
+    .content.no--p-top
+      
+      .section.advantages.hidden-xs
+        .container
+          .advantages__row.row
+            .col-sm-4
+              .advantages__block
+                i.advantages__block-icon1
+                .advantages__block-content
+                  strong Надежность и безопасность операции
+                  span Самое современное высокотехнологичное операционное оборудование и медицинские устройства ведущих мировых производителей, доступные в очень узкому кругу специалистов. 
+            .col-sm-4
+              .advantages__block
+                i.advantages__block-icon2
+                .advantages__block-content
+                  strong Быстрое восстановление после операции
+                  span Лечение в соответствии с международными протоколами с доказанной эффективностью, принятыми в ведущих клиниках Европы и США.
+            .col-sm-4
+              .advantages__block
+                i.advantages__block-icon3
+                .advantages__block-content
+                  strong Мониторинг здоровья и состояния пациентов
+                  span Мониторинг здоровья и состояния пациентов в течение нескольких лет после операции.
       
       .section.welcome
         .container

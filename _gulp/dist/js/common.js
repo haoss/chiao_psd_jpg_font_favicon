@@ -58,6 +58,7 @@ $(document).on('ready', function(){
   stonesCarousel();
   sectionCarousel();
   mainQuestion();
+  mainCarousel();
 
   // Chrome Smooth Scroll
   try {
@@ -253,5 +254,18 @@ function mainQuestion(){
       }
       $('.section__carousel-body--1').slick('refresh');
     });
+  });
+}
+
+function mainCarousel(){
+  $('.main-slider__carousel').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    draggable: false,
+    // autoplay: true,
+    // autoplaySpeed: 5000
   });
 }

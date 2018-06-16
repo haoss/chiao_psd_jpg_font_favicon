@@ -22,6 +22,7 @@
         &+div
           margin-left: 30px
   .welcome
+    padding-top: 70px
     &__img
       display: none
     &__wrapper
@@ -53,6 +54,30 @@
       padding-right: 62px
     &__form
       padding-top: 0
+  .advantages
+    &__block
+      padding-left: 0
+      padding-top: 100px
+      text-align: center
+      i
+        left: 50%
+        transform: translateX(-50%)
+  .main-slider
+    &__block
+      height: 428px
+      &-info
+        display: none
+      &-content
+        top: 26px
+        .div
+          &2
+            font-size: 22px
+          &3
+            font-size: 28px
+          &4
+            font-size: 32px
+          &5
+            font-size: 26px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -104,6 +129,8 @@
     &__form
       &>div
         width: 220px
+  .footer
+    padding-top: 40px
 
 @media (max-width : 991px) and (min-width : 767px)
   .section
@@ -146,6 +173,7 @@
         &+div
           margin-left: 0
   .welcome
+    padding-top: 115px
     padding-bottom: 40px
     &__content
       height: auto
@@ -194,9 +222,47 @@
       margin: 0 auto
       &>div
         width: 100%
+  .footer
+    &__bottom
+      padding: 6px 0
+      &>div
+        padding: 6px 0
+        height: auto
+        line-height: inherit
+    &__copyright, &__development
+      text-align: center
+      float: none
+    &__btn
+      display: flex
+      max-width: 450px
+      margin-left: auto
+      margin-right: auto
+      &>div
+        padding-right: 15px
+        width: 50%
+        &+div
+          padding-left: 15px
+          padding-right: 0
+          padding-top: 0
+    &__social
+      left: 50%
+      width: 50%
+      transform: translateX(-75px)
+      position: relative
+      font-size: 46px
+      &-title
+        margin-bottom: 0
+      a
+        vertical-align: inherit
+        &+a
+          margin-left: 46px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
+  .visible-xxs
+    display: block !important
+  .hidden-xxs
+    display: none !important
   .form-free
     &__form
       padding-left: 23px
@@ -223,6 +289,21 @@
     &__form
       padding-left: 23px
       padding-right: 23px
+  .footer
+    &__logo, &__address
+      max-width: 244px
+      margin-left: auto
+      margin-right: auto
+    &__address
+      margin-bottom: 15px
+    &__logo
+      margin-top: 0
+      img
+        margin-left: auto
+        margin-right: auto
+        display: block
+    &__social
+      font-size: 41px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
