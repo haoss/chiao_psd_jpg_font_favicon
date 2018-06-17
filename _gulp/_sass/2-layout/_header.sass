@@ -1,3 +1,133 @@
 /* header */
 .header
-  // background-color: $color-gray
+  background: $color-white
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  z-index: 1000
+  &__top
+    border-bottom: 1px solid #edeff1
+    font-size: 12px
+    color: $primary-color
+    display: flex
+    font-family: $font-roboto-r
+    justify-content: space-between
+    a
+      color: $primary-color
+      text-decoration: none
+      &:hover, &:focus
+        color: $color-blue
+    &>div
+      height: 38px
+      line-height: 37px
+      flex-shrink: 0
+      display: flex
+      i
+        color: #c1c1c1
+        font-size: 12px
+        display: inline-block
+        line-height: 1
+        margin-right: 8px
+    &-address
+      float: left
+    &-phone
+      display: flex
+      margin-left: 40px
+      &>div
+        &+div
+          margin-left: 15px
+    &-time
+      margin-left: 32px
+  &__bottom
+    height: 78px
+    padding-top: 22px
+    &-btn
+      float: right
+      width: 185px
+    +clearfix
+  &-separator
+    height: 116px
+  &__logo
+    float: left
+    margin-top: -5px
+  &__nav
+    margin-left: 220px
+    margin-right: 262px
+    display: flex
+    justify-content: center
+    ul
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        margin: 0
+    &-desctop
+      font-family: $font-roboto-m
+      font-size: 12px
+      text-transform: uppercase
+      nav
+        &>ul
+          display: flex
+          &>li
+            position: relative
+            height: 45px
+            &:hover
+              &>ul
+                display: block
+            &+li
+              margin-left: 24px
+            &>a, &>span
+              text-decoration: none
+              color: $primary-color
+              display: inline-block
+              i
+                color: #7e7e7e
+                font-size: 10px
+                margin-left: 5px
+                display: inline-block
+                vertical-align: 1px
+            &>a
+              &:hover, &:focus
+                color: $color-blue
+            &.active
+              &>a, &>span
+                color: $color-blue
+            &>ul
+              display: none
+              position: absolute
+              right: -20px
+              width: 196px
+              // display: block
+              background: $color-white
+              border-radius: 7px
+              box-shadow: 0 6px 38px rgba($color-black,.13)
+              top: 38px
+              padding: 15px 0
+              &::before
+                content: ''
+                width: 0
+                height: 0
+                border-left: 8px solid transparent
+                border-right: 8px solid transparent
+                border-bottom: 8px solid $color-white
+                position: absolute
+                right: 17px
+                top: -8px
+              &>li
+                display: block
+                padding: 9px 0
+                &>a, &>span
+                  text-decoration: none
+                  color: $primary-color
+                  display: inline-block
+                  padding: 0 30px
+                &>a
+                  &:hover, &:focus
+                    color: $color-blue
+                &.active
+                  &>a, &>span
+                    color: $color-blue
+
+    &-mobile
+      display: none

@@ -20,7 +20,10 @@ html(lang="ru")
           div
             .main-slider__block
               picture.main-slider__block-img
-                source(media='(max-width: 991px)', srcset='./img/main-slider/slide-1-970.png')
+                source(media='(max-width: 320px)', srcset='./img/main-slider/slide-1-320.png')
+                source(media='(max-width: 480px)', srcset='./img/main-slider/slide-1-480.png')
+                source(media='(max-width: 750px)', srcset='./img/main-slider/slide-1-750.png')
+                source(media='(max-width: 970px)', srcset='./img/main-slider/slide-1-970.png')
                 img(src='./img/main-slider/slide-1-1170.png', alt='')
               .main-slider__block-info Удаление желчных камней и полипов
               .main-slider__block-content
@@ -40,6 +43,9 @@ html(lang="ru")
           div
             .main-slider__block
               picture.main-slider__block-img
+                source(media='(max-width: 320px)', srcset='./img/main-slider/slide-2-320.png')
+                source(media='(max-width: 480px)', srcset='./img/main-slider/slide-2-480.png')
+                source(media='(max-width: 750px)', srcset='./img/main-slider/slide-2-750.png')
                 source(media='(max-width: 991px)', srcset='./img/main-slider/slide-2-970.png')
                 img(src='./img/main-slider/slide-2-1170.png', alt='')
               .main-slider__block-info.main-slider__block-info--2 Удаление желчных камней и полипов
@@ -50,7 +56,8 @@ html(lang="ru")
                 .div4.div4--2
                   span операцию без удаления
                 .div5.div5--2 камней с желчного пузыря
-                .div6.div6--2 // Сохраните желчный пузырь - не нарушайте целостность организма
+                .div6.div6--2.hidden-xs // Сохраните желчный пузырь - не нарушайте целостность организма
+                .div6.div6--2.visible-xs //   Сохраните желчный пузырь и живите полноценной жизнью
                 .div7-btn.div7-btn--2
                   div
                     a(href="#!").btn.btn--block Запись на консультацию
@@ -376,7 +383,7 @@ html(lang="ru")
                     button(type="button").btn.btn--block оставить email
     
     include ./_include/_footer
-    div(style="height: 1000px; background-color: #000")
+    //- div(style="height: 1000px; background-color: #000")
     
     //[if gte IE 9]
       <script src='./js/libs/html5shiv/es5-shim.min.js'>

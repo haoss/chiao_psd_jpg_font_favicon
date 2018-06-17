@@ -19,25 +19,58 @@
         <!-- Header-->
         <header class="header">
             <div class="container">
-                <nav role="navigation" class="navigation">
-                    <ul>
-                        <li class="active"><a href="#" title="Главная">Главная</a></li>
-                        <li><a href="#" title="О нас">О нас</a></li>
-                        <li><a href="#" title="Продукция">Продукция</a></li>
-                        <li><a href="#" title="Сотрудничество">Сотрудничество</a></li>
-                        <li><a href="#" title="Наши магазины">Наши магазины</a></li>
-                        <li><a href="#" title="Контакты">Контакты</a></li>
-                    </ul>
-                </nav>
+                <div class="header__top">
+                    <div>
+                        <div class="header__top-address"><i class="ion-ios-location"></i>г. Гуанчжоу, КНР</div>
+                        <div class="header__top-phone">
+                            <div><i class="ion-android-call"></i><a href="tel:">+7 977 495 95 99 (г.Москва)</a></div>
+                            <div><i class="ion-android-call"></i><a href="tel:">+86 136 2288 6224 (г.Гуанчжоу)</a></div>
+                        </div>
+                        <div class="header__top-time"> <i class="ion-android-time"></i>Воскресенье - Пятница, с 8:00 до 19:00</div>
+                    </div>
+                    <div>
+                        <div class="header__top-mail"><i class="ion-android-mail"></i><a href="mailto:">info@kamneynet.com</a></div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__logo"><a href="#!"><img src="./img/logo.png" alt=""></a></div>
+                    <div class="header__bottom-btn"><a href="#!" class="btn btn--small btn--block">Заказать звонок</a></div>
+                    <div class="header__nav">
+                        <div class="header__nav-desctop">
+                            <nav>
+                                <ul>
+                                    <li><a href="#!">Главная</a></li>
+                                    <li><a href="#!">Удаление камней</a></li>
+                                    <li><a href="#!">Удаление полипов</a></li>
+                                    <li><a href="#!">Вопросы/Ответы</a></li>
+                                    <li><a href="#!">цена</a></li>
+                                    <li><a href="#!">Отзывы</a></li>
+                                    <li><a href="#!" class="no--wrap">О клинике<i class="ion-chevron-down"></i></a>
+                                        <ul>
+                                            <li><a href="#!">персонал</a></li>
+                                            <li><a href="#!">врачи</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#!">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__nav-mobile"></div>
+                    </div>
+                </div>
             </div>
         </header>
+        <div class="header-separator"></div>
         <div class="main-slider">
             <div class="main-slider__wrapper">
                 <div class="main-slider__carousel">
                     <div>
                         <div class="main-slider__block">
                             <picture class="main-slider__block-img">
-                                <source media="(max-width: 991px)" srcset="./img/main-slider/slide-1-970.png"><img src="./img/main-slider/slide-1-1170.png" alt="">
+                                <source media="(max-width: 320px)" srcset="./img/main-slider/slide-1-320.png">
+                                <source media="(max-width: 480px)" srcset="./img/main-slider/slide-1-480.png">
+                                <source media="(max-width: 750px)" srcset="./img/main-slider/slide-1-750.png">
+                                <source media="(max-width: 970px)" srcset="./img/main-slider/slide-1-970.png"><img src="./img/main-slider/slide-1-1170.png" alt="">
                             </picture>
                             <div class="main-slider__block-info">Удаление желчных камней и полипов</div>
                             <div class="main-slider__block-content">
@@ -57,6 +90,9 @@
                     <div>
                         <div class="main-slider__block">
                             <picture class="main-slider__block-img">
+                                <source media="(max-width: 320px)" srcset="./img/main-slider/slide-2-320.png">
+                                <source media="(max-width: 480px)" srcset="./img/main-slider/slide-2-480.png">
+                                <source media="(max-width: 750px)" srcset="./img/main-slider/slide-2-750.png">
                                 <source media="(max-width: 991px)" srcset="./img/main-slider/slide-2-970.png"><img src="./img/main-slider/slide-2-1170.png" alt="">
                             </picture>
                             <div class="main-slider__block-info main-slider__block-info--2">Удаление желчных камней и полипов</div>
@@ -66,7 +102,8 @@
                                 <div class="div3 div3--2">проводит в г.Гуанчжоу</div>
                                 <div class="div4 div4--2"><span>операцию без удаления</span></div>
                                 <div class="div5 div5--2">камней с желчного пузыря</div>
-                                <div class="div6 div6--2">// Сохраните желчный пузырь - не нарушайте целостность организма</div>
+                                <div class="div6 div6--2 hidden-xs">// Сохраните желчный пузырь - не нарушайте целостность организма</div>
+                                <div class="div6 div6--2 visible-xs">//   Сохраните желчный пузырь и живите полноценной жизнью</div>
                                 <div class="div7-btn div7-btn--2">
                                     <div><a href="#!" class="btn btn--block">Запись на консультацию</a></div>
                                     <div><a href="#!" class="btn btn--block">Запись на лечение</a></div>
@@ -398,7 +435,6 @@
                 </div>
             </div>
         </footer>
-        <div style="height: 1000px; background-color: #000"></div>
         <!--[if gte IE 9]
         <script src='./js/libs/html5shiv/es5-shim.min.js'>
         <script src='./js/libs/html5shiv/html5shiv.min.js'>

@@ -2,14 +2,49 @@
 header.header
   .container
     
-    -var navigation = { 'Главная': '#', 'О нас': '#', 'Продукция': '#', 'Сотрудничество': '#', 'Наши магазины': '#', 'Контакты': '#'};
+    .header__top
+      div
+        .header__top-address
+          i.ion-ios-location
+          | г. Гуанчжоу, КНР
+        .header__top-phone
+          div
+            i.ion-android-call
+            a(href="tel:") +7 977 495 95 99 (г.Москва)
+          div
+            i.ion-android-call
+            a(href="tel:") +86 136 2288 6224 (г.Гуанчжоу)
+        .header__top-time 
+          i.ion-android-time
+          | Воскресенье - Пятница, с 8:00 до 19:00
+      div
+        .header__top-mail
+          i.ion-android-mail
+          a(href="mailto:") info@kamneynet.com
     
-    nav.navigation(role="navigation")
-      ul
-        each val, key in navigation
-          if active === key
-            li.active
-              a(href=val, title=key)= key
-          else
-            li
-              a(href=val, title=key)= key
+    .header__bottom
+      .header__logo
+        a(href="#!")
+          img(src="./img/logo.png", alt="")
+      .header__bottom-btn
+        a(href="#!").btn.btn--small.btn--block Заказать звонок
+      .header__nav
+        .header__nav-desctop
+          nav
+            ul
+              li: a(href="#!") Главная
+              li: a(href="#!") Удаление камней
+              li: a(href="#!") Удаление полипов
+              li: a(href="#!") Вопросы/Ответы
+              li: a(href="#!") цена
+              li: a(href="#!") Отзывы
+              li
+                a(href="#!").no--wrap О клинике
+                  i.ion-chevron-down
+                ul
+                  li: a(href="#!") персонал
+                  li: a(href="#!") врачи
+              li: a(href="#!") Контакты
+        .header__nav-mobile
+
+.header-separator

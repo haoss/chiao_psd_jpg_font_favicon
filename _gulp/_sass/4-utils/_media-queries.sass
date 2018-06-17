@@ -68,16 +68,47 @@
       &-info
         display: none
       &-content
-        top: 26px
+        top: 27px
         .div
+          &1
+            &--2
+              top: 9px
           &2
-            font-size: 22px
+            font-size: 24px
+            &--2
+              top: 60px
+              font-size: 21px
           &3
-            font-size: 28px
+            font-size: 30px
+            top: 90px
+            left: 81px
+            &--2
+              top: 97px
+              font-size: 28px
           &4
-            font-size: 32px
+            font-size: 41px
+            top: 128px
+            span
+              height: 47px
+              line-height: 47px
+            &--2
+              top: 132px
+              font-size: 32px
+              padding-left: 20px
+              padding-right: 10px
+              span
+                height: 43px
+                line-height: 43px
           &5
-            font-size: 26px
+            font-size: 28px
+            top: 185px
+            &--2
+              top: 183px
+              font-size: 26px
+          &7-btn
+            top: 242px
+            .btn
+              width: 210px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -131,6 +162,53 @@
         width: 220px
   .footer
     padding-top: 40px
+  .main-slider
+    &__block
+      height: 428px
+      &-info
+        display: none
+      &-content
+        top: 27px
+        .div
+          &1
+            &--2
+              top: 9px
+          &2
+            font-size: 24px
+            &--2
+              top: 60px
+              font-size: 21px
+          &3
+            font-size: 30px
+            top: 90px
+            left: 81px
+            &--2
+              top: 97px
+              font-size: 28px
+          &4
+            font-size: 41px
+            top: 128px
+            span
+              height: 47px
+              line-height: 47px
+            &--2
+              top: 132px
+              font-size: 32px
+              padding-left: 20px
+              padding-right: 10px
+              span
+                height: 43px
+                line-height: 43px
+          &5
+            font-size: 28px
+            top: 185px
+            &--2
+              top: 183px
+              font-size: 26px
+          &7-btn
+            top: 242px
+            .btn
+              width: 206px
 
 @media (max-width : 991px) and (min-width : 767px)
   .section
@@ -173,7 +251,7 @@
         &+div
           margin-left: 0
   .welcome
-    padding-top: 115px
+    padding-top: 75px
     padding-bottom: 40px
     &__content
       height: auto
@@ -256,6 +334,62 @@
         vertical-align: inherit
         &+a
           margin-left: 46px
+  .main-slider
+    &__block
+      height: 428px
+      &-info
+        display: none
+      &-content
+        top: 27px
+        .div
+          &1
+            &--2
+              top: 9px
+          &2
+            font-size: 19px
+            top: 75px
+            &--2
+              top: 73px
+              font-size: 17px
+          &3
+            font-size: 24px
+            top: 106px
+            left: 66px
+            &--2
+              top: 100px
+              font-size: 23px
+          &4
+            font-size: 32px
+            top: 136px
+            left: 15px
+            span
+              height: 37px
+              line-height: 37px
+            &--2
+              top: 129px
+              font-size: 26px
+              padding-left: 16px
+              padding-right: 8px
+              span
+                height: 35px
+                line-height: 35px
+          &5
+            font-size: 22px
+            top: 180px
+            &--2
+              top: 168px
+              font-size: 21px
+          &6
+            bottom: 60px
+            &--2
+              font-size: 14px
+          &7-btn
+            top: 242px
+            .btn
+              width: 206px
+    &__date
+      strong
+        display: block
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
@@ -268,6 +402,7 @@
       padding-left: 23px
       padding-right: 23px
   .welcome
+    padding-top: 115px
     &__more
       p
         max-width: 165px
@@ -304,6 +439,70 @@
         display: block
     &__social
       font-size: 41px
+  .main-slider
+    &__block
+      height: 428px
+      &-info
+        display: none
+      &-content
+        top: 35px
+        .div
+          &1
+            padding-left: 7px
+            padding-right: 7px
+            &--2
+              top: 1px
+          &2
+            font-size: 13px
+            top: 80px
+            &--2
+              top: 80px
+              font-size: 11px
+          &3
+            font-size: 16px
+            top: 102px
+            left: 50px
+            &--2
+              top: 98px
+              font-size: 16px
+              left: 48px
+          &4
+            font-size: 22px
+            top: 121px
+            left: 16px
+            span
+              height: 25px
+              line-height: 25px
+            &--2
+              top: 118px
+              font-size: 17px
+              padding-left: 9px
+              padding-right: 12px
+              span
+                height: 23px
+                line-height: 23px
+          &5
+            font-size: 15px
+            top: 151px
+            &--2
+              top: 146px
+              font-size: 14px
+          &6
+            bottom: 34px
+            &--2
+              font-size: 14px
+          &7-btn
+            top: 247px
+            left: 15px
+            right: 15px
+            .btn
+              width: 100%
+            &>div
+              width: 100%
+              &:last-child
+                display: none
+    &__date
+      bottom: -70px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
