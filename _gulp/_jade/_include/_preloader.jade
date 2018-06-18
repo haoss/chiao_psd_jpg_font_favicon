@@ -1,2 +1,28 @@
 .loader
   .loader__block
+
+#popup.popup.mfp-hide
+  .popup__close Закрыть
+    i.ion-ios-close-empty
+  .popup__wrapper
+    .popup__title.text-center бесплатная консультация
+    p.text-center Уникальное и качественное в мире предложение! 
+    p.text-center
+      strong Не упустите возможность излечится!
+    form(action="#")
+      .form__group.has-feedback
+        label.hidden Ваше имя
+        input(type="text" placeholder="Ваше имя").form__control
+        i.ion-alert-circled
+      .form__group.has-feedback
+        label.hidden Телефон
+        input(type="text" placeholder="Телефон").form__control
+        i.ion-alert-circled
+      .form__group
+        button(type="button").btn.btn--block заказать звонок
+      .form__group.text-center
+        label.form__checkbox.form__checkbox--inline-block
+          input(type="checkbox" checked)
+          i.ion-android-checkbox-outline-blank
+          i.ion-android-checkbox
+          span.span Согласен на обработку данных

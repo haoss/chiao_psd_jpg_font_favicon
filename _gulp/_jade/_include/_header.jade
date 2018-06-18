@@ -4,20 +4,22 @@ header.header
     
     .header__top
       div
-        .header__top-address
+        .header__top-address.hidden-xs
           i.ion-ios-location
           | г. Гуанчжоу, КНР
         .header__top-phone
           div
             i.ion-android-call
-            a(href="tel:") +7 977 495 95 99 (г.Москва)
+            a(href="tel:") +7 977 495 95 99
+              span.hidden-xxs (г.Москва)
           div
             i.ion-android-call
-            a(href="tel:") +86 136 2288 6224 (г.Гуанчжоу)
-        .header__top-time 
+            a(href="tel:") +86 136 2288 6224 
+              span.hidden-xxs (г.Гуанчжоу)
+        .header__top-time.hidden-sm.hidden-xs
           i.ion-android-time
           | Воскресенье - Пятница, с 8:00 до 19:00
-      div
+      div.hidden-xs
         .header__top-mail
           i.ion-android-mail
           a(href="mailto:") info@kamneynet.com
@@ -27,7 +29,7 @@ header.header
         a(href="#!")
           img(src="./img/logo.png", alt="")
       .header__bottom-btn
-        a(href="#!").btn.btn--small.btn--block Заказать звонок
+        a(href="#popup").btn.btn--small.btn--block.open-popup-link Заказать звонок
       .header__nav
         .header__nav-desctop
           nav
@@ -46,5 +48,10 @@ header.header
                   li: a(href="#!") врачи
               li: a(href="#!") Контакты
         .header__nav-mobile
+          button#header-mobile.btn.btn--mobile
+            span 
+            b меню сайта 
+            i.ion-chevron-down
+          nav
 
 .header-separator

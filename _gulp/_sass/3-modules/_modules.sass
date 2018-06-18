@@ -638,3 +638,47 @@
         font-size: 14px
   &__carousel
     margin: 0 !important
+
+.popup
+  position: relative
+  background: $color-white
+  max-width: 320px
+  width: 100%
+  border-radius: 5px
+  overflow: hidden
+  font-family: $font-sansation-r
+  margin: 10px auto 10px
+  background:
+    color: #eff4f9
+    image: url('../img/bg-popup.png')
+    position: top center
+    size: cover
+    repeat: no-repeat
+  &__title
+    font-size: 28px
+    text-transform: uppercase
+    font-family: $font-sansation-b
+    line-height: 1.2
+    margin-bottom: 10px
+  p
+    margin-bottom: 15px
+  &__close
+    position: absolute
+    right: 13px
+    top: 10px
+    cursor: pointer
+    color: $color-red
+    white-space: nowrap
+    font-size: 11px
+    text-transform: uppercase
+    i
+      margin-left: 5px
+      font-size: 22px
+      line-height: 1
+      vertical-align: -4px
+  &__wrapper
+    padding: 55px 10px 10px 10px
+    form
+      padding: 0 38px
+    .form-group, .form__group
+      margin-bottom: 20px

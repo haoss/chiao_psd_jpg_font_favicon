@@ -16,25 +16,51 @@
         <div class="loader">
             <div class="loader__block"></div>
         </div>
+        <div id="popup" class="popup mfp-hide">
+            <div class="popup__close">Закрыть<i class="ion-ios-close-empty"></i></div>
+            <div class="popup__wrapper">
+                <div class="popup__title text-center">бесплатная консультация</div>
+                <p class="text-center">Уникальное и качественное в мире предложение! </p>
+                <p class="text-center"><strong>Не упустите возможность излечится!</strong></p>
+                <form action="#">
+                    <div class="form__group has-feedback">
+                        <label class="hidden">Ваше имя</label>
+                        <input type="text" placeholder="Ваше имя" class="form__control"><i class="ion-alert-circled"></i>
+                    </div>
+                    <div class="form__group has-feedback">
+                        <label class="hidden">Телефон</label>
+                        <input type="text" placeholder="Телефон" class="form__control"><i class="ion-alert-circled"></i>
+                    </div>
+                    <div class="form__group">
+                        <button type="button" class="btn btn--block">заказать звонок</button>
+                    </div>
+                    <div class="form__group text-center">
+                        <label class="form__checkbox form__checkbox--inline-block">
+                            <input type="checkbox" checked><i class="ion-android-checkbox-outline-blank"></i><i class="ion-android-checkbox"></i><span class="span">Согласен на обработку данных</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
         <!-- Header-->
         <header class="header">
             <div class="container">
                 <div class="header__top">
                     <div>
-                        <div class="header__top-address"><i class="ion-ios-location"></i>г. Гуанчжоу, КНР</div>
+                        <div class="header__top-address hidden-xs"><i class="ion-ios-location"></i>г. Гуанчжоу, КНР</div>
                         <div class="header__top-phone">
-                            <div><i class="ion-android-call"></i><a href="tel:">+7 977 495 95 99 (г.Москва)</a></div>
-                            <div><i class="ion-android-call"></i><a href="tel:">+86 136 2288 6224 (г.Гуанчжоу)</a></div>
+                            <div><i class="ion-android-call"></i><a href="tel:">+7 977 495 95 99<span class="hidden-xxs">(г.Москва)</span></a></div>
+                            <div><i class="ion-android-call"></i><a href="tel:">+86 136 2288 6224 <span class="hidden-xxs">(г.Гуанчжоу)</span></a></div>
                         </div>
-                        <div class="header__top-time"> <i class="ion-android-time"></i>Воскресенье - Пятница, с 8:00 до 19:00</div>
+                        <div class="header__top-time hidden-sm hidden-xs"><i class="ion-android-time"></i>Воскресенье - Пятница, с 8:00 до 19:00</div>
                     </div>
-                    <div>
+                    <div class="hidden-xs">
                         <div class="header__top-mail"><i class="ion-android-mail"></i><a href="mailto:">info@kamneynet.com</a></div>
                     </div>
                 </div>
                 <div class="header__bottom">
                     <div class="header__logo"><a href="#!"><img src="./img/logo.png" alt=""></a></div>
-                    <div class="header__bottom-btn"><a href="#!" class="btn btn--small btn--block">Заказать звонок</a></div>
+                    <div class="header__bottom-btn"><a href="#popup" class="btn btn--small btn--block open-popup-link">Заказать звонок</a></div>
                     <div class="header__nav">
                         <div class="header__nav-desctop">
                             <nav>
@@ -55,7 +81,10 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="header__nav-mobile"></div>
+                        <div class="header__nav-mobile">
+                            <button id="header-mobile" class="btn btn--mobile"><span> </span><b>меню сайта </b><i class="ion-chevron-down"></i></button>
+                            <nav></nav>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -388,7 +417,7 @@
                 <div class="footer__top">
                     <div class="row visible-xs">
                         <div class="col-xs-12 text-center">
-                            <button id="mobile" class="btn btn--mobile"><span> </span>меню сайта </button>
+                            <button id="footer-mobile" type="button" class="btn btn--mobile"><span> </span>меню сайта </button>
                         </div>
                     </div>
                     <div class="row">

@@ -51,7 +51,11 @@ $(document).on('ready', function(){
 
   $('.open-popup-link').magnificPopup({
     type: 'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    midClick: true,
+    showCloseBtn: false
+  });
+  $('.popup__close').on('click', function(){
+    $.magnificPopup.close();
   });
 
   welcomeCarousel();
@@ -59,6 +63,7 @@ $(document).on('ready', function(){
   sectionCarousel();
   mainQuestion();
   mainCarousel();
+  mobileNavigation();
 
   // Chrome Smooth Scroll
   try {
@@ -267,5 +272,46 @@ function mainCarousel(){
     draggable: false,
     // autoplay: true,
     // autoplaySpeed: 5000
+  });
+}
+
+function mobileNavigation(){
+  var ul1 = $('.header__nav-desctop nav>ul');
+  var ul2 = $('.header__nav-mobile nav');
+  ul1.clone().appendTo(ul2);
+
+  var btn1 = $('#header-mobile');
+  btn1.on('click', function(e){
+    e.stopPropagation();
+    var _this = $(this);
+
+    if (_this.parent().hasClass('is-active')) {
+      _this.parent().removeClass('is-active')
+    } else {
+      _this.parent().addClass('is-active')
+    }
+  });
+
+  ul2.on('click', function(e){
+    e.stopPropagation();
+  });
+
+  $(document).on('click', function(){
+    if ($('.header__nav-mobile').hasClass('is-active')) {
+      $('.header__nav-mobile').removeClass('is-active');
+    }
+  });
+
+  var btn2 = $('#footer-mobile');
+  btn2.on('click', function(e){
+    e.stopPropagation();
+    var _this = $(this);
+
+    $('html, body').animate({
+        scrollTop: $(".header").offset().top
+    }, 1000, function(){
+      $('.header__nav-mobile').removeClass('is-active');
+      $('#header-mobile').trigger('click');
+    });
   });
 }
