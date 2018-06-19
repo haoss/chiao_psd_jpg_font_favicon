@@ -98,6 +98,15 @@
     background: $color-white
     padding: 9px 9px 0 9px
     width: 262px
+    &--document
+      position: relative
+      width: 100% !important
+      display: block !important
+      .welcome__carousel-bottom
+        margin: 45px 0 25px 0 !important
+        .slick-dots
+          bottom: inherit
+          top: -28px
     .slick-slide
       outline: none
       &:focus
@@ -396,7 +405,7 @@
         margin-left: 40px
   &__form
     display: flex
-    padding-top: 30px
+    // padding-top: 30px
     &>div
       width: 257px
       &+div
@@ -682,3 +691,87 @@
       padding: 0 38px
     .form-group, .form__group
       margin-bottom: 20px
+
+.breadcrumbs
+  background: #fafafa
+  font-size: 9px
+  min-height: 25px
+  color: $primary-color
+  padding-top: 7px
+  ul
+    margin: 0 0 0 0
+    padding: 0
+    li
+      list-style: none
+      margin: 0 0 5px 0
+      display: inline-block
+      &+li
+        &::before
+          color: #838383
+          content: '/'
+          display: inline-block
+          margin: 0 5px 0 2px
+      a, span
+        display: inline-block
+      a
+        color: #838383
+        text-decoration: none
+
+.content
+  padding-top: 35px
+  padding-bottom: 35px
+  &__head
+    h1, .h1
+      font-size: 28px
+      font-family: $font-sansation-b
+    p
+      font-size: 16px
+      line-height: 26px
+  &__nav
+    border: 1px solid $color-blue
+    border-radius: 5px
+    background: $color-white
+    position: relative
+    overflow: hidden
+    padding: 20px 22px 10px 22px
+    text-transform: uppercase
+    font-family: $font-sansation-b
+    font-size: 14px
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style: none
+        margin: 0 0 10px 0
+        &>a, &>span
+          display: block
+          text-decoration: none
+          min-height: 30px
+          padding: 7px 10px 4px 41px
+          border-radius: 25px
+          box-shadow: 0 0 0 $color-blue
+          color: $primary-color
+          position: relative
+          &::before
+            position: absolute
+            content: "\f10b"
+            font-family: $font-ionicons
+            color: #c1c1c1
+            font-size: 15px
+            left: 15px
+            top: 7px
+            line-height: 1
+        &>a
+          &:hover
+            color: $color-blue
+        &.active
+          &>a, &>span
+            background: $color-blue
+            color: $color-white
+            box-shadow: 0 6px 20px $color-blue
+            &::before
+              color: $color-white
+              top: 8px
+  &__introtext
+    font-size: 16px
+    line-height: 26px

@@ -69,7 +69,7 @@ html(lang="ru")
         strong 8, 9, 14, 15  
           small мая
     
-    .content.no--p-top
+    .content.no--p
       
       .section.advantages.hidden-xs
         .container
@@ -362,25 +362,9 @@ html(lang="ru")
             a(href="#!").section__carousel-all
               | Все отзывы
               i.ion-chevron-right
-    
-      .section.form-email
-        .container
-          
-          .form-email__wrapper
-            div
-              .form-email__title оставьте email
-              p Получите уникальное и качественное в мире предложение! 
-                br
-                strong Не упустите возможность излечится!
-            div
-              form.form-email__form(action="#")
-                div
-                  .form__group.has-feedback
-                    label.hidden Ваше email
-                    input(type="text" placeholder="Ваше email").form__control
-                    i.ion-alert-circled
-                  .form__group
-                    button(type="button").btn.btn--block оставить email
+      
+      +form-email    
+      
     
     include ./_include/_footer
     //- div(style="height: 1000px; background-color: #000")

@@ -26,3 +26,32 @@
           i.ion-android-checkbox-outline-blank
           i.ion-android-checkbox
           span.span Согласен на обработку данных
+
+mixin breadcrumbs
+  .breadcrumbs
+    .container
+      ul
+        li
+          a(href="#!") Медицинский центр CHIАO
+        li
+          span Название страницы
+
+mixin form-email
+  .section.form-email
+    .container
+      
+      .form-email__wrapper
+        div
+          .form-email__title оставьте email
+          p Получите уникальное и качественное в мире предложение! 
+            br
+            strong Не упустите возможность излечится!
+        div
+          form.form-email__form(action="#")
+            div
+              .form__group.has-feedback
+                label.hidden Ваше email
+                input(type="text" placeholder="Ваше email").form__control
+                i.ion-alert-circled
+              .form__group
+                button(type="button").btn.btn--block оставить email
