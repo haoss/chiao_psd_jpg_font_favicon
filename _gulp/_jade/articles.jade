@@ -1,0 +1,110 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Статьи' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Статьи' + ' - медицинский центр Chiao' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    +breadcrumbs
+    
+    .content
+      .container
+        
+        .content__head
+          h1 Статьи
+          
+        .news
+          .news__block
+            .news__block-img
+              a(href="#!")
+                img(src="./img/news-block-1.png", alt="")
+            a(href="#!").news__block-title Можно ли проводить операцию при “отключенном” желчном пузыре
+            .news__block-date 01.01.2018
+            p Отключенный 
+              strong жёлчный пузырь 
+              | — так называют состояние желчного пузыря, при котором жёлчь...
+              a(href="#!") Подробнее
+          .news__block
+            .news__block-img
+              a(href="#!")
+                img(src="./img/news-block-2.png", alt="")
+            a(href="#!").news__block-title Защищено: Деформация желчного пузыря: перегибы, перетяжки, перегородки.
+            .news__block-date 01.01.2018
+            p Отключенный 
+              strong жёлчный пузырь 
+              | — так называют состояние желчного пузыря, при котором жёлчь...
+              a(href="#!") Подробнее
+          .news__block
+            .news__block-img
+              a(href="#!")
+                img(src="./img/news-block-3.png", alt="")
+            a(href="#!").news__block-title После удаления желчного пузыря
+            .news__block-date 01.01.2018
+            p Отключенный 
+              strong жёлчный пузырь 
+              | — так называют состояние желчного пузыря, при котором жёлчь...
+              a(href="#!") Подробнее
+          .news__block
+            .news__block-img
+              a(href="#!")
+                img(src="./img/news-block-4.png", alt="")
+            a(href="#!").news__block-title Можно ли проводить операцию при “отключенном” желчном пузыре
+            .news__block-date 01.01.2018
+            p Отключенный 
+              strong жёлчный пузырь 
+              | — так называют состояние желчного пузыря, при котором жёлчь...
+              a(href="#!") Подробнее
+          .news__block
+            .news__block-img
+              a(href="#!")
+                img(src="./img/news-block-5.png", alt="")
+            a(href="#!").news__block-title Можно ли проводить операцию при “отключенном” желчном пузыре
+            .news__block-date 01.01.2018
+            p Отключенный 
+              strong жёлчный пузырь 
+              | — так называют состояние желчного пузыря, при котором жёлчь...
+              a(href="#!") Подробнее
+          .news__block
+            .news__block-img
+              a(href="#!")
+                img(src="./img/news-block-6.png", alt="")
+            a(href="#!").news__block-title Можно ли проводить операцию при “отключенном” желчном пузыре
+            .news__block-date 01.01.2018
+            p Отключенный 
+              strong жёлчный пузырь 
+              | — так называют состояние желчного пузыря, при котором жёлчь...
+              a(href="#!") Подробнее
+              
+        .text-center
+          a(href="#!").btn.btn--small Загрузить еще 
+    
+    +form-email
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+    script().
+      $(document).ready(function(){
+        $('.header__nav-desctop ul > li:nth-child(7)').addClass('active');
+        //- $('nav.content__nav li:nth-child(1)').addClass('active');
+      })
