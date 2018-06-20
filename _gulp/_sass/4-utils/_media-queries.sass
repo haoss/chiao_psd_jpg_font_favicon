@@ -338,6 +338,15 @@
       &-title
         strong
           font-size: 21px
+  .section
+    &__carousel
+      &--reviews
+        .section__carousel-comment
+          height: 267px
+      &-comment
+        &>a
+          b
+            width: 156px
 
 @media (max-width : 991px) and (min-width : 767px)
   .section
@@ -410,6 +419,12 @@
             max-width: 450px
             margin-left: auto
             margin-right: auto
+      &--reviews
+        max-width: 450px
+        margin: 0 auto
+        &>div
+          width: 100%
+          padding: 0
   .form-email
     padding-bottom: 45px
     &__wrapper
@@ -632,6 +647,13 @@
           padding-top: 10px
           .slick-dots
             margin-top: -20px
+      &-comment
+        &>a
+          b
+            width: 108px
+      &--reviews
+        .section__carousel-comment
+          height: 190px
   .form-email
     &__form
       padding-left: 23px

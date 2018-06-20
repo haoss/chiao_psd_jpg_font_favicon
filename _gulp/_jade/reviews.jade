@@ -1,0 +1,80 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Отзывы' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Отзывы' + ' - медицинский центр Chiao' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    +breadcrumbs
+    
+    .content
+      .container
+        
+        .content__head
+          h1 Отзывы
+        
+        .section__carousel.section__carousel--reviews.gallery
+          div
+            .section__carousel-comment
+              a(href="./img/comment-slider.png").gallery-item
+                img(src="./img/comment-slider.png", alt="").img-responsive
+                i.ion-arrow-expand
+                span
+                  strong Екатерина, 42 года
+                  time 10.04.2017 
+                b увеличить
+          div
+            .section__carousel-comment
+              a(href="./img/comment-slider.png").gallery-item
+                img(src="./img/comment-slider.png", alt="").img-responsive
+                i.ion-arrow-expand
+                span
+                  strong Екатерина, 42 года
+                  time 10.04.2017
+                b увеличить
+          div
+            .section__carousel-comment
+              a(href="./img/comment-slider.png").gallery-item
+                img(src="./img/comment-slider.png", alt="").img-responsive
+                i.ion-arrow-expand
+                span
+                  strong Екатерина, 42 года
+                  time 10.04.2017
+                b увеличить
+          div
+            .section__carousel-comment
+              a(href="./img/comment-slider.png").gallery-item
+                img(src="./img/comment-slider.png", alt="").img-responsive
+                i.ion-arrow-expand
+                span
+                  strong Екатерина, 42 года
+                  time 10.04.2017
+                b увеличить
+
+        .text-center
+          a(href="#!").btn.btn--small Загрузить еще 
+    
+    +form-email
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
