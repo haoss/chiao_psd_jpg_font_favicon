@@ -59,7 +59,7 @@ $(document).on('ready', function(){
     midClick: true,
     showCloseBtn: false
   });
-  $('.popup__close').on('click', function(){
+  $(document).on('click', '.popup__close', function(){
     $.magnificPopup.close();
   });
 
@@ -89,6 +89,7 @@ $(document).on('ready', function(){
   simpleForm('form.form1');
   simpleForm('form.form2');
   simpleForm('form.form3');
+  simpleForm('form.form4');
 });
 
 $(window).on('load', function() {
