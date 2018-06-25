@@ -86,7 +86,9 @@ $(document).on('ready', function(){
   };
 
   // simpleForm version 2015-09-23 14:30 GMT +2
-  simpleForm('form.form-callback');
+  simpleForm('form.form1');
+  simpleForm('form.form2');
+  simpleForm('form.form3');
 });
 
 $(window).on('load', function() {
