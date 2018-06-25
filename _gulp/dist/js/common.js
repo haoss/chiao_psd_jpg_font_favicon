@@ -41,7 +41,7 @@ $(document).on('ready', function(){
 
   // Magnific popup video
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
+    //disableOn: 700,
     type: 'iframe',
     mainClass: 'mfp-fade',
     removalDelay: 160,
@@ -51,6 +51,11 @@ $(document).on('ready', function(){
 
   $('.open-popup-link').magnificPopup({
     type: 'inline',
+    midClick: true,
+    showCloseBtn: false
+  });
+  $('.open-popup-ajax').magnificPopup({
+    type: 'ajax',
     midClick: true,
     showCloseBtn: false
   });
