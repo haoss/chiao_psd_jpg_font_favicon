@@ -75,16 +75,6 @@ $(document).on('ready', function(){
     $(this).prepend('<span class="span">' + ($(this).index() + 1) + '</span>');
   });
 
-  // Chrome Smooth Scroll
-  try {
-    $.browserSelector();
-    if($("html").hasClass("chrome")) {
-      $.smoothScroll();
-    }
-  } catch(err) {
-
-  };
-
   // simpleForm version 2015-09-23 14:30 GMT +2
   simpleForm('form.form1');
   simpleForm('form.form2');
